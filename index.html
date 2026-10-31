@@ -1,571 +1,305 @@
-
 <!DOCTYPE html>
 <html lang="vi">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Góc Quà Lưu Niệm - những món quà đẹp dành cho người bạn yêu quý.">
-    <title>Góc Quà Lưu Niệm | Gửi trao yêu thương</title>
+    <title>Góc Quà Lưu Niệm</title>
+
+    <link rel="icon" type="image/svg+xml"
+    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect x='15' y='35' width='70' height='52' rx='8' fill='%23842c47'/%3E%3Cpath d='M50 35V87M15 51H85' stroke='%23fff' stroke-width='5'/%3E%3Cpath d='M50 35C18 35 22 5 40 13C50 17 50 35 50 35ZM50 35C82 35 78 5 60 13C50 17 50 35 50 35Z' fill='%23d8ad75'/%3E%3C/svg%3E">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body id="trang-chu">
+<body>
 
-    <!-- THANH THONG BAO -->
-    <div class="announcement">
-        <span>♡</span> Chọn một món quà, gửi ngàn lời thương <span>♡</span>
-    </div>
+    <!-- HEADER -->
+    <header class="header" id="trang-chu">
 
-    <!-- DAU TRANG -->
-    <header class="site-header">
-        <div class="container header-inner">
+        <div class="top-note">
+            Mỗi món quà là một cách nói lời yêu thương
+        </div>
 
-            <a href="#trang-chu" class="logo">
-                <span class="logo-icon">♡</span>
-                <span class="logo-text">
-                    <span class="logo-name">Góc Quà</span>
-                    <span class="logo-subtitle">LƯU NIỆM & YÊU THƯƠNG</span>
-                </span>
+        <div class="header-main">
+
+            <a href="#trang-chu" class="brand">
+                <div class="brand-icon">
+                    <svg viewBox="0 0 64 64">
+                        <path d="M12 27h40v29H12z"/>
+                        <path d="M32 27v29M12 37h40"/>
+                        <path d="M32 27C8 27 12 7 24 10c7 2 8 17 8 17Z"/>
+                        <path d="M32 27c24 0 20-20 8-17-7 2-8 17-8 17Z"/>
+                    </svg>
+                </div>
+
+                <div class="brand-text">
+                    <span class="brand-name">Góc Quà</span>
+                    <span class="brand-sub">LƯU NIỆM</span>
+                </div>
             </a>
 
-            <nav class="main-nav">
-                <a href="#trang-chu" class="nav-link active">Trang chủ</a>
-                <a href="#danh-muc" class="nav-link">Danh mục</a>
-                <a href="#san-pham" class="nav-link">Sản phẩm</a>
-                <a href="#cau-chuyen" class="nav-link">Về chúng tôi</a>
+            <nav class="navigation">
+                <a href="#trang-chu" class="active">Trang chủ</a>
+                <a href="#danh-muc">Danh mục quà</a>
+                <a href="#san-pham">Sản phẩm</a>
+                <a href="#gioi-thieu">Giới thiệu</a>
+                <a href="#lien-he">Liên hệ</a>
             </nav>
-
-            <a href="#san-pham" class="header-button">
-                Chọn quà <span>↗</span>
-            </a>
 
         </div>
     </header>
 
-    <main>
 
-        <!-- BANNER CHINH -->
-        <section class="hero">
-            <div class="container hero-grid">
+    <!-- BANNER -->
+    <section class="hero">
 
-                <div class="hero-content">
-                    <p class="eyebrow">
-                        <span class="eyebrow-line"></span>
-                        A LITTLE GIFT, A LOT OF LOVE
-                    </p>
+        <div class="hero-content">
+            <span class="hero-label">GIFT & SOUVENIR COLLECTION</span>
 
-                    <h1>
-                        Gửi trao chút
-                        <span class="title-highlight">ngọt ngào,</span>
-                        lưu giữ yêu thương.
-                    </h1>
+            <h1>Lưu giữ những điều<br><em>đáng nhớ</em></h1>
 
-                    <p class="hero-description">
-                        Có những điều thật khó nói thành lời.
-                        Một món quà được chọn bằng sự quan tâm
-                        đôi khi đã đủ để người nhận cảm thấy đặc biệt.
-                    </p>
+            <p>
+                Những món quà nhỏ mang theo tình cảm lớn,
+                dành tặng người thương và lưu giữ những khoảnh khắc đẹp.
+            </p>
 
-                    <div class="hero-actions">
-                        <a href="#san-pham" class="button button-primary">
-                            Tìm món quà phù hợp <span>↗</span>
-                        </a>
-                        <a href="#cau-chuyen" class="text-link">
-                            Câu chuyện của Góc Quà →
-                        </a>
-                    </div>
+            <a href="#san-pham" class="hero-button">
+                Khám phá quà tặng
+            </a>
+        </div>
 
-                    <div class="hero-note">
-                        <span class="note-icon">♡</span>
-                        <span>Từ những món quà nhỏ đến những kỷ niệm lớn.</span>
-                    </div>
-                </div>
+        <div class="hero-decoration">
+            <div class="hero-circle"></div>
 
-                <div class="hero-visual">
-                    <div class="hero-image-frame">
-                        <img
-                            src="https://victoriashop.jp/cdn/shop/collections/27522741_m.jpg?v=1780893322"
-                            alt="Hộp quà được trang trí tinh tế"
-                            class="hero-image"
-                            fetchpriority="high"
-                        >
-                    </div>
-
-                    <div class="hero-decoration decoration-top">✳</div>
-                    <div class="hero-decoration decoration-bottom">♡</div>
-
-                    <div class="floating-note">
-                        <span class="floating-note-icon">✿</span>
-                        <div>
-                            <strong>Một món quà thật riêng</strong>
-                            <span>Dành cho người bạn quý mến</span>
-                        </div>
-                    </div>
-
-                    <div class="image-caption">
-                        <span class="caption-dot"></span>
-                        A LITTLE BOX OF HAPPINESS
-                    </div>
-                </div>
-
+            <div class="hero-caption">
+                <span>GIFT WITH LOVE</span>
+                <strong>Made for memories</strong>
             </div>
-        </section>
+        </div>
 
-        <!-- THANH GIA TRI -->
-        <section class="benefit-strip">
-            <div class="container benefit-grid">
+    </section>
 
-                <div class="benefit-item">
-                    <span class="benefit-icon">♡</span>
-                    <div>
-                        <strong>Quà cho mọi dịp</strong>
-                        <p>Sinh nhật, kỷ niệm và hơn thế</p>
-                    </div>
-                </div>
 
-                <div class="benefit-item">
-                    <span class="benefit-icon">✧</span>
-                    <div>
-                        <strong>Chọn theo sở thích</strong>
-                        <p>Mỗi người một món quà riêng</p>
-                    </div>
-                </div>
+    <!-- MAIN LAYOUT -->
+    <main class="page-layout">
 
-                <div class="benefit-item">
-                    <span class="benefit-icon">❀</span>
-                    <div>
-                        <strong>Chú trọng hình thức</strong>
-                        <p>Đẹp từ món quà đến cách gói</p>
-                    </div>
-                </div>
+        <!-- CONTENT -->
+        <div class="main-content">
 
-            </div>
-        </section>
+            <!-- INTRODUCTION -->
+            <section class="intro-section" id="gioi-thieu">
 
-        <!-- DANH MUC -->
-        <section class="section category-section" id="danh-muc">
-            <div class="container">
+                <span class="section-eyebrow">WELCOME TO OUR STORE</span>
+
+                <h2>Món quà nhỏ, kỷ niệm lớn</h2>
+
+                <p>
+                    Góc Quà Lưu Niệm mang đến những món quà xinh xắn,
+                    độc đáo và ý nghĩa. Mỗi sản phẩm đều có thể trở thành
+                    một dấu ấn đặc biệt trong những khoảnh khắc đáng nhớ.
+                </p>
+
+            </section>
+
+
+            <!-- CATEGORIES -->
+            <section class="category-section" id="danh-muc">
 
                 <div class="section-heading">
-                    <p class="eyebrow">FIND YOUR LITTLE JOY</p>
-                    <h2>Chọn quà theo <span class="title-highlight">cảm xúc</span></h2>
-                    <p class="section-description">
-                        Mỗi người đều có một sở thích riêng. Bắt đầu từ điều họ yêu thích nhé.
-                    </p>
+                    <div>
+                        <span class="section-eyebrow">EXPLORE COLLECTION</span>
+                        <h2>Danh mục quà tặng</h2>
+                    </div>
                 </div>
 
                 <div class="category-grid">
 
-                    <!-- HOP QUA MY PHAM -->
-                    <a href="#san-pham" class="category-card">
-                        <div class="category-image-wrap">
-                            <img
-                                src="https://images.pexels.com/photos/17511748/pexels-photo-17511748.png?auto=compress&cs=tinysrgb&w=900"
-                                alt="Hộp quà mỹ phẩm tông hồng kem"
-                                class="category-image"
-                                loading="lazy"
-                            >
-                            <span class="category-number">01</span>
-                        </div>
-                        <div class="category-info">
-                            <div>
-                                <h3>Hộp quà xinh</h3>
-                                <p>Chỉn chu trong từng chi tiết</p>
-                            </div>
-                            <span class="category-arrow">↗</span>
-                        </div>
-                    </a>
+    <a href="#san-pham" class="category-card" data-category="personalized">
+        <div class="category-symbol">♡</div>
+        <h3>Quà cá nhân hóa</h3>
+        <p>Mang dấu ấn riêng</p>
+    </a>
 
-                    <!-- HOA TUOI -->
-                    <a href="#san-pham" class="category-card">
-                        <div class="category-image-wrap">
-                            <img
-                                src="https://julietteflowers.de/cdn/shop/files/pink_ohara_roses_hamburg.png?v=1732459201&width=1946"
-                                alt="Bó hoa hồng phấn"
-                                class="category-image"
-                                loading="lazy"
-                            >
-                            <span class="category-number">02</span>
-                        </div>
-                        <div class="category-info">
-                            <div>
-                                <h3>Hoa tươi</h3>
-                                <p>Thay lời muốn nói</p>
-                            </div>
-                            <span class="category-arrow">↗</span>
-                        </div>
-                    </a>
+    <a href="#san-pham" class="category-card" data-category="souvenir">
+        <div class="category-symbol">✧</div>
+        <h3>Đồ lưu niệm</h3>
+        <p>Lưu giữ kỷ niệm</p>
+    </a>
 
-                    <!-- TRANG SUC -->
-                    <a href="#san-pham" class="category-card">
-                        <div class="category-image-wrap">
-                            <img
-                                src="https://images.tcdn.com.br/img/editor/up/1253254/conjunto_de_joias_de_prata_colar_e_brincos.png"
-                                alt="Bộ trang sức bạc trong hộp quà sang trọng"
-                                class="category-image"
-                                loading="lazy"
-                            >
-                            <span class="category-number">03</span>
-                        </div>
-                        <div class="category-info">
-                            <div>
-                                <h3>Trang sức</h3>
-                                <p>Lưu giữ điều đặc biệt</p>
-                            </div>
-                            <span class="category-arrow">↗</span>
-                        </div>
-                    </a>
+    <a href="#san-pham" class="category-card" data-category="decoration">
+        <div class="category-symbol">⌂</div>
+        <h3>Quà trang trí</h3>
+        <p>Điểm tô không gian</p>
+    </a>
 
-                    <!-- GAU BONG -->
-                    <a href="#san-pham" class="category-card">
-                        <div class="category-image-wrap">
-                            <img
-                                src="https://api.floraindia.com/upload/ilF8jwUGZ11734080309576.webp"
-                                alt="Gấu bông trắng đáng yêu trên nền hồng"
-                                class="category-image"
-                                loading="lazy"
-                            >
-                            <span class="category-number">04</span>
-                        </div>
-                        <div class="category-info">
-                            <div>
-                                <h3>Gấu bông</h3>
-                                <p>Mềm mại và đáng yêu</p>
-                            </div>
-                            <span class="category-arrow">↗</span>
-                        </div>
-                    </a>
+    <a href="#san-pham" class="category-card" data-category="memory">
+        <div class="category-symbol">♧</div>
+        <h3>Quà kỷ niệm</h3>
+        <p>Trao gửi yêu thương</p>
+    </a>
 
-                    <!-- QUA CHO NAM -->
-                    <a href="#dong-ho" class="category-card">
-                        <div class="category-image-wrap category-image-dark">
-                            <img
-                                src="https://images.unsplash.com/photo-1524805444758-089113d48a6d?auto=format&fit=crop&w=900&q=85"
-                                alt="Đồng hồ thanh lịch dành tặng nam"
-                                class="category-image"
-                                loading="lazy"
-                            >
-                            <span class="category-number">05</span>
-                        </div>
-                        <div class="category-info">
-                            <div>
-                                <h3>Quà cho nam</h3>
-                                <p>Thanh lịch và tinh tế</p>
-                            </div>
-                            <span class="category-arrow">↗</span>
-                        </div>
-                    </a>
+</div>
+            </section>
 
-                </div>
-            </div>
-        </section>
 
-        <!-- THANH TIM KIEM -->
-        <section class="search-section">
-            <div class="container search-inner">
+            <!-- PRODUCT CATALOG -->
+            <section class="product-section" id="san-pham">
 
-                <div>
-                    <p class="eyebrow">A GIFT FOR SOMEONE SPECIAL</p>
-                    <h2>Đang tìm món quà phù hợp?</h2>
-                    <p>Thử bắt đầu với tên món quà bạn đang nghĩ đến.</p>
-                </div>
-
-                <form class="search-box" id="searchForm" action="#san-pham">
-                    <span class="search-icon">⌕</span>
-                    <input
-                        type="search"
-                        name="search"
-                        placeholder="Ví dụ: đồng hồ, hoa hồng..."
-                        aria-label="Tìm kiếm sản phẩm"
-                    >
-                    <button type="submit" aria-label="Tìm kiếm">Tìm quà ↗</button>
-                </form>
-
-            </div>
-        </section>
-
-        <!-- SAN PHAM NOI BAT -->
-        <section class="section product-section" id="san-pham">
-            <div class="container">
-
-                <div class="product-heading-row">
-                    <div class="section-heading section-heading-left">
-                        <p class="eyebrow">OUR LITTLE COLLECTION</p>
-                        <h2>Món quà <span class="title-highlight">được chọn riêng</span></h2>
+                <div class="section-heading">
+                    <div>
+                        <span class="section-eyebrow">OUR SPECIAL COLLECTION</span>
+                        <h2>Sản phẩm nổi bật</h2>
                         <p class="section-description">
-                            Một vài gợi ý để bạn dễ tìm được món quà vừa ý.
+                            Những món quà lưu niệm được chọn lọc dành cho bạn.
                         </p>
                     </div>
-                    <span class="product-count">GỢI Ý QUÀ TẶNG ♡</span>
+
+                    <span class="product-count">05 sản phẩm</span>
                 </div>
+
 
                 <div class="product-grid">
 
-                    <!-- SAN PHAM 1: CHOCOLATE -->
-                    <article class="product-card">
-                        <div class="product-image-wrap">
-                            <img
-                                src="https://images.pexels.com/photos/14275677/pexels-photo-14275677.jpeg?auto=compress&cs=tinysrgb&w=1000"
-                                alt="Hộp chocolate cao cấp với nơ màu đồng"
-                                class="product-image"
-                                loading="lazy"
-                            >
-                            <span class="product-badge">CHOCOLATE CAO CẤP</span>
-                            <span class="product-heart">♡</span>
-                        </div>
-                        <div class="product-info">
-                            <p class="product-category">HỘP QUÀ CHOCOLATE</p>
-                            <h3>Chocolate Box – Sang trọng</h3>
-                            <p class="product-description">
-                                Chocolate được trình bày tinh tế trong hộp quà
-                                thanh lịch, thích hợp cho sinh nhật và kỷ niệm.
-                            </p>
-                            <div class="product-bottom">
-                                <span class="product-suggestion">Gợi ý quà tặng</span>
-                                <span class="product-arrow">↗</span>
-                            </div>
-                        </div>
-                    </article>
-
-                    <!-- SAN PHAM 2: HOA HONG -->
-                    <article class="product-card">
-                        <div class="product-image-wrap">
-                            <img
-                                src="https://ruscus.flowers/cdn/shop/files/101-red-roses-main.webp?v=1754044777&width=1200"
-                                alt="Bó hoa hồng đỏ"
-                                class="product-image"
-                                loading="lazy"
-                            >
-                            <span class="product-badge">NỒNG NÀN & LÃNG MẠN</span>
-                            <span class="product-heart">♡</span>
-                        </div>
-                        <div class="product-info">
-                            <p class="product-category">HOA TƯƠI</p>
-                            <h3>Bó hồng đỏ yêu thương</h3>
-                            <p class="product-description">
-                                Sắc đỏ nổi bật dành cho những ngày thật đáng nhớ.
-                            </p>
-                            <div class="product-bottom">
-                                <span class="product-suggestion">Gợi ý quà tặng</span>
-                                <span class="product-arrow">↗</span>
-                            </div>
-                        </div>
-                    </article>
-
-                    <!-- SAN PHAM 3: GAU BONG -->
-                    <article class="product-card">
-                        <div class="product-image-wrap">
-                            <img
-                                src="https://basketeer.com/cdn/shop/files/Valentine-Soft-Pink-Teddy-Bear-Gift-Bangkok-Delivery-VLT26-0015-1.jpg?v=1773915514&width=1200"
-                                alt="Gấu bông màu hồng"
-                                class="product-image"
-                                loading="lazy"
-                            >
-                            <span class="product-badge">NHỎ XINH & ĐÁNG YÊU</span>
-                            <span class="product-heart">♡</span>
-                        </div>
-                        <div class="product-info">
-                            <p class="product-category">GẤU BÔNG</p>
-                            <h3>Gấu hồng mềm mại</h3>
-                            <p class="product-description">
-                                Món quà dễ thương dành cho người thích những điều ngọt ngào.
-                            </p>
-                            <div class="product-bottom">
-                                <span class="product-suggestion">Gợi ý quà tặng</span>
-                                <span class="product-arrow">↗</span>
-                            </div>
-                        </div>
-                    </article>
-
-                    <!-- SAN PHAM 4: MOC KHOA -->
-                    <article class="product-card">
-                        <div class="product-image-wrap">
-                            <img
-                                src="https://nestasia.in/cdn/shop/files/Pink-Bow-And-Pearl-Heart-Cute-Keychain_4.jpg?v=1734180245&width=1200"
-                                alt="Móc khóa nơ hồng và trái tim"
-                                class="product-image"
-                                loading="lazy"
-                            >
-                            <span class="product-badge">MÓN QUÀ NHỎ XINH</span>
-                            <span class="product-heart">♡</span>
-                        </div>
-                        <div class="product-info">
-                            <p class="product-category">PHỤ KIỆN</p>
-                            <h3>Móc khóa nơ hồng</h3>
-                            <p class="product-description">
-                                Nhỏ gọn, xinh xắn và có thể mang theo mỗi ngày.
-                            </p>
-                            <div class="product-bottom">
-                                <span class="product-suggestion">Gợi ý quà tặng</span>
-                                <span class="product-arrow">↗</span>
-                            </div>
-                        </div>
-                    </article>
-
-                    <!-- SAN PHAM 5: DONG HO NAM -->
-                    <article class="product-card" id="dong-ho">
-                        <div class="product-image-wrap watch-image-wrap">
-                            <img
-                                src="https://images.pexels.com/photos/9561293/pexels-photo-9561293.jpeg?auto=compress&cs=tinysrgb&w=1000"
-                                alt="Đồng hồ bạc trong hộp đen"
-                                class="product-image"
-                                loading="lazy"
-                            >
-                            <span class="product-badge">QUÀ TẶNG THANH LỊCH</span>
-                            <span class="product-heart">♡</span>
-                        </div>
-                        <div class="product-info">
-                            <p class="product-category">ĐỒNG HỒ NAM</p>
-                            <h3>Đồng hồ bạc lịch lãm</h3>
-                            <p class="product-description">
-                                Tông bạc kết hợp hộp đen, phù hợp với người yêu thích phong cách gọn gàng.
-                            </p>
-                            <div class="product-bottom">
-                                <span class="product-suggestion">Gợi ý quà tặng</span>
-                                <span class="product-arrow">↗</span>
-                            </div>
-                        </div>
-                    </article>
-
-                    <!-- SAN PHAM 6: TRANG SUC -->
-                    <article class="product-card">
-                        <div class="product-image-wrap">
-                            <img
-                                src="https://i.etsystatic.com/60241409/r/il/7b8f90/7114191872/il_794xN.7114191872_3hto.jpg"
-                                alt="Món trang sức được trình bày tinh tế"
-                                class="product-image"
-                                loading="lazy"
-                            >
-                            <span class="product-badge">TẶNG NGƯỜI ĐẶC BIỆT</span>
-                            <span class="product-heart">♡</span>
-                        </div>
-                        <div class="product-info">
-                            <p class="product-category">TRANG SỨC</p>
-                            <h3>Món quà tinh tế</h3>
-                            <p class="product-description">
-                                Một lựa chọn nhẹ nhàng cho những dịp muốn lưu giữ kỷ niệm.
-                            </p>
-                            <div class="product-bottom">
-                                <span class="product-suggestion">Gợi ý quà tặng</span>
-                                <span class="product-arrow">↗</span>
-                            </div>
-                        </div>
-                    </article>
-
+  
                 </div>
+            </section>
 
-                <p class="product-note">
-                    ✿ Hãy chọn món quà phù hợp với sở thích của người nhận.
+
+            <!-- MESSAGE BANNER -->
+            <section class="message-banner">
+
+                <span class="message-decoration">“</span>
+
+                <p>
+                    Có những món quà không chỉ để trao đi,
+                    mà còn để lưu giữ những điều ta luôn trân trọng.
+                </p>
+
+                <span class="message-line"></span>
+
+                <small>GÓC QUÀ LƯU NIỆM</small>
+
+            </section>
+
+        </div>
+
+
+        <!-- SIDEBAR -->
+        <aside class="sidebar">
+
+            <!-- SEARCH -->
+            <div class="sidebar-box search-box">
+
+                <span class="sidebar-eyebrow">FIND YOUR GIFT</span>
+
+                <h3>Tìm kiếm quà</h3>
+
+                <form action="#san-pham" method="get">
+                    <input
+                     type="search"
+                     id="search-input"
+                     name="keyword"
+                     placeholder="Bạn đang tìm món quà nào?">
+
+                    <button type="submit">Tìm kiếm</button>
+                </form>
+
+            </div>
+
+
+            <!-- CATEGORY LINKS -->
+            <div class="sidebar-box">
+
+                <span class="sidebar-eyebrow">SHOP BY CATEGORY</span>
+
+                <h3>Danh mục sản phẩm</h3>
+
+                <ul class="sidebar-links">
+                    <li><a href="#san-pham">Móc khóa kỷ niệm <span>→</span></a></li>
+                    <li><a href="#san-pham">Ly sứ in hình <span>→</span></a></li>
+                    <li><a href="#san-pham">Thú bông lưu niệm <span>→</span></a></li>
+                    <li><a href="#san-pham">Quả cầu tuyết <span>→</span></a></li>
+                    <li><a href="#san-pham">Khung ảnh lưu niệm <span>→</span></a></li>
+                </ul>
+
+            </div>
+
+
+            <!-- PRICE FILTER -->
+            <div class="sidebar-box">
+
+                <span class="sidebar-eyebrow">PRICE FILTER</span>
+
+                <h3>Lọc theo giá</h3>
+
+                <select id="price-filter" name="price-filter" aria-label="Lọc sản phẩm theo giá">
+                    <option value="">Tất cả mức giá</option>
+                    <option value="under-100">Dưới 100.000đ</option>
+                    <option value="100-200">100.000đ - 200.000đ</option>
+                    <option value="over-200">Trên 200.000đ</option>
+                </select>
+
+                <p class="filter-note">
+                    Lựa chọn mức giá phù hợp với món quà bạn muốn tìm.
                 </p>
 
             </div>
-        </section>
 
-        <!-- CAU CHUYEN CUA GOC QUA -->
-        <section class="section story-section" id="cau-chuyen">
-            <div class="container story-grid">
 
-                <div class="story-visual">
-                    <div class="story-image-main">
-                        <img
-                            src="https://images.pexels.com/photos/5874681/pexels-photo-5874681.jpeg?auto=compress&cs=tinysrgb&w=1000"
-                            alt="Hộp quà và hoa tươi được chuẩn bị cẩn thận"
-                            loading="lazy"
-                        >
-                    </div>
+            <!-- SIDEBAR MESSAGE -->
+            <div class="sidebar-note">
 
-                    <div class="story-stamp">
-                        <span>MADE WITH</span>
-                        <strong>♡</strong>
-                        <span>LOVE</span>
-                    </div>
-                    <span class="story-sparkle sparkle-one">✳</span>
-                    <span class="story-sparkle sparkle-two">✧</span>
-                </div>
+                <div class="note-icon">♡</div>
 
-                <div class="story-content">
-                    <p class="eyebrow">OUR LITTLE STORY</p>
+                <h3>Trao quà bằng cả tấm lòng</h3>
 
-                    <h2>
-                        Không chỉ là món quà,
-                        <span class="title-highlight">mà còn là kỷ niệm.</span>
-                    </h2>
-
-                    <p>
-                        Có những món quà không cần quá đắt tiền,
-                        chỉ cần đúng sở thích và được chọn bằng sự quan tâm
-                        là đã đủ làm người nhận vui lòng.
-                    </p>
-
-                    <p>
-                        Góc Quà Lưu Niệm là nơi tập hợp những gợi ý quà tặng
-                        cho bạn bè, gia đình và những người quan trọng.
-                        Mong rằng bạn sẽ tìm được một món quà thật hợp ý.
-                    </p>
-
-                    <div class="story-signature">
-                        <span class="signature-line"></span>
-                        <span>Một góc nhỏ, ngàn yêu thương.</span>
-                        <span class="signature-heart">♡</span>
-                    </div>
-                </div>
+                <p>
+                    Một món quà ý nghĩa không nằm ở giá trị,
+                    mà ở tình cảm người trao gửi.
+                </p>
 
             </div>
-        </section>
 
-        <!-- LOI NHAN CUOI TRANG -->
-        <section class="closing-section">
-            <div class="container closing-content">
-                <span class="closing-flower">✿</span>
-                <p class="eyebrow">A GIFT FROM THE HEART</p>
 
-                <h2>Một món quà nhỏ,<br>một niềm vui thật lớn.</h2>
+            <!-- CONTACT -->
+            <div class="sidebar-box contact-box" id="lien-he">
 
-                <p>Đôi khi, chỉ cần một chút quan tâm là đủ.</p>
+                <span class="sidebar-eyebrow">GET IN TOUCH</span>
 
-                <a href="#danh-muc" class="button button-light">
-                    Tìm cảm hứng quà tặng ↑
-                </a>
+                <h3>Liên hệ với chúng tôi</h3>
 
-                <span class="closing-decoration closing-decoration-one">♡</span>
-                <span class="closing-decoration closing-decoration-two">✧</span>
+                <p>Góc Quà Lưu Niệm</p>
+
+                <p>Trao yêu thương qua những món quà nhỏ.</p>
+
             </div>
-        </section>
+
+        </aside>
 
     </main>
 
-    <!-- CHAN TRANG -->
-    <footer class="site-footer">
-        <div class="container footer-main">
 
-            <a href="#trang-chu" class="logo footer-logo">
-                <span class="logo-icon">♡</span>
-                <span class="logo-text">
-                    <span class="logo-name">Góc Quà</span>
-                    <span class="logo-subtitle">LƯU NIỆM & YÊU THƯƠNG</span>
-                </span>
-            </a>
+    <!-- FIXED FOOTER -->
+    <footer class="footer">
 
-            <p class="footer-message">
-                Gửi trao yêu thương, lưu giữ những điều đẹp đẽ.
-            </p>
+        <div class="footer-inner">
 
-            <a href="#trang-chu" class="back-to-top">Trở về đầu trang ↑</a>
+            <div class="footer-brand">
+                <span>Góc Quà Lưu Niệm</span>
+                <small>Trao yêu thương qua những món quà nhỏ.</small>
+            </div>
+
+            <div class="footer-copy">
+                © 2026 Góc Quà Lưu Niệm. All rights reserved.
+            </div>
+
         </div>
 
-        <div class="container footer-bottom">
-            <p>© 2026 Góc Quà Lưu Niệm</p>
-            <p>Đồ án thiết kế giao diện website</p>
-        </div>
     </footer>
-
-    <!-- FILE JAVASCRIPT -->
-    <script type="module" src="./js/main.js"></script>
-
+<script type="module" src="js/app.js"></script>
 </body>
 </html>
